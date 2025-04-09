@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Loading Overlay -->
+    <div id="loading-overlay">
+        <div class="loader-container">
+            <div class="loader"></div>
+            <p class="loading-text" data-en="Loading" data-tr="Yükleniyor"><span class="loading-dots">...</span></p>
+        </div>
+    </div>
+    
     <canvas id="background-canvas"></canvas>
     
     <header>
@@ -65,7 +73,7 @@
                         <div class="technologies">
                             <span>Unity</span>
                             <span>C#</span>
-                            <span>Mobile UI</span>
+                            <span data-en="Mobile UI" data-tr="Mobil Arayüz">Mobil Arayüz</span>
                         </div>
                         <div class="project-links">
                             <a href="https://wilwaerin.itch.io/lets-draw" class="demo-button" data-en="itch.io" data-tr="itch.io" target="_blank">itch.io</a>
@@ -83,7 +91,7 @@
                         <div class="technologies">
                             <span>Unreal Engine 5</span>
                             <span>C++</span>
-                            <span>Physics</span>
+                            <span data-en="Physics" data-tr="Fizik">Fizik</span>
                         </div>
                         <div class="project-links">
                             <a href="https://wilwaerin.itch.io/knockbarrel" class="demo-button" data-en="itch.io" data-tr="itch.io" target="_blank">itch.io</a>
@@ -101,7 +109,7 @@
                         <div class="technologies">
                             <span>Unreal Engine 5</span>
                             <span>Blueprint</span>
-                            <span>Platform Game</span>
+                            <span data-en="Platform Game" data-tr="Platform Oyunu">Platform Oyunu</span>
                         </div>
                         <div class="project-links">
                             <a href="https://northern-lights-studios.itch.io/lost-in-chase" class="demo-button" data-en="itch.io" data-tr="itch.io" target="_blank">itch.io</a>
@@ -119,7 +127,6 @@
                 </div>
                 <div class="about-content">
                     <p data-en="Hey there! I'm Berkay, a game developer who's been on this exciting journey for 2 years now. I love developing games and I've found my true passion in building immersive games. I've focused on crafting mobile games with different genres that people enjoy and impressed. While I'm proud of my coding skills and problem-solving abilities, what really drives me is the dream of one day running my own game studio where we can create experiences that touch people's hearts. Every day I learn something new in this amazing field and it makes me happy!" data-tr="Merhaba! Ben Berkay, 2 yıldır bu heyecan verici yolculuğa çıkan bir oyun geliştiricisiyim. Oyun geliştirmeyi seviyorum ve gerçek tutkumu sürükleyici oyunlar inşa etmekte buldum. İnsanların keyif aldığı ve etkilendiği farklı türlerde mobil oyunlar tasarlamaya odaklandım. Kodlama becerilerim ve problem çözme yeteneklerimle gurur duysam da, beni gerçekten motive eden şey bir gün insanların kalplerine dokunan deneyimler yaratabileceğimiz kendi oyun stüdyomu işletme hayali. Bu harika alanda her gün yeni bir şeyler öğreniyorum ve bu beni mutlu ediyor!">Merhaba! Ben Berkay, 2 yıldır bu heyecan verici yolculuğa çıkan bir oyun geliştiricisiyim. Oyun geliştirmeyi seviyorum ve gerçek tutkumu sürükleyici oyunlar inşa etmekte buldum. İnsanların keyif aldığı ve etkilendiği farklı türlerde mobil oyunlar tasarlamaya odaklandım. Kodlama becerilerim ve problem çözme yeteneklerimle gurur duysam da, beni gerçekten motive eden şey bir gün insanların kalplerine dokunan deneyimler yaratabileceğimiz kendi oyun stüdyomu işletme hayali. Bu harika alanda her gün yeni bir şeyler öğreniyorum ve bu beni mutlu ediyor!</p>
-                    <p data-en="My technologies and skills:" data-tr="Kullandığım teknolojiler ve becerilerim:">Kullandığım teknolojiler ve becerilerim:</p>
                     <div class="skills-grid">
                         <div class="skill-hex">
                             <div class="hex-content">
@@ -142,12 +149,6 @@
                         <div class="skill-hex">
                             <div class="hex-content">
                                 <i class="fas fa-code"></i>
-                                <span class="skill-title" data-en="C++" data-tr="C++">C++</span>
-                            </div>
-                        </div>
-                        <div class="skill-hex">
-                            <div class="hex-content">
-                                <i class="fas fa-code"></i>
                                 <span class="skill-title" data-en="Blueprint" data-tr="Blueprint">Blueprint</span>
                             </div>
                         </div>
@@ -157,8 +158,19 @@
                                 <span class="skill-title" data-en="UI/UX Design" data-tr="UI/UX Tasarım">UI/UX Tasarım</span>
                             </div>
                         </div>
+                        <div class="skill-hex">
+                            <div class="hex-content">
+                                <i class="fas fa-photo-video"></i>
+                                <span class="skill-title" data-en="Photoshop" data-tr="Photoshop">Photoshop</span>
+                            </div>
+                        </div>
+                        <div class="skill-hex">
+                            <div class="hex-content">
+                                <i class="fas fa-bezier-curve"></i>
+                                <span class="skill-title" data-en="Illustrator" data-tr="Illustrator">Illustrator</span>
+                            </div>
+                        </div>
                     </div>
-                    <p data-en="As a developer open to continuous learning, I'm working to create creative and innovative games." data-tr="Sürekli öğrenmeye açık bir geliştirici olarak, yaratıcı ve yenilikçi oyunlar tasarlamak için çalışıyorum.">Sürekli öğrenmeye açık bir geliştirici olarak, yaratıcı ve yenilikçi oyunlar tasarlamak için çalışıyorum.</p>
                 </div>
             </div>
         </section>
@@ -195,10 +207,10 @@
         <p>&copy; 2025 <span data-en="Berkay Mustafaoğlu - Game Developer Portfolio" data-tr="Berkay Mustafaoğlu - Oyun Geliştirici Portfolyosu">Berkay Mustafaoğlu - Oyun Geliştirici Portfolyosu</span> | <span data-en="All rights reserved" data-tr="Tüm hakları saklıdır">Tüm hakları saklıdır</span></p>
         <div class="language-switcher">
             <button id="lang-tr" class="lang-btn active" data-lang="tr">
-                <span class="flag-icon">🇹🇷</span> TR
+                <img src="images/turkey-flag.png" alt="Türkçe" class="flag-img"> TR
             </button>
             <button id="lang-en" class="lang-btn" data-lang="en">
-                <span class="flag-icon">🇬🇧</span> EN
+                <img src="images/united-kingdom-flag.png" alt="English" class="flag-img"> EN
             </button>
         </div>
     </footer>

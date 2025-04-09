@@ -1,5 +1,70 @@
 // Canvas arka plan animasyonu
 document.addEventListener('DOMContentLoaded', function() {
+    // Tarayıcı dilini algıla ve Loading/Yükleniyor olarak ayarla
+    const browserLang = navigator.language || navigator.userLanguage;
+    const loadingText = document.querySelector('.loading-text');
+    if (loadingText) {
+        if (browserLang.substring(0, 2) === 'tr') {
+            loadingText.textContent = 'Yükleniyor';
+        } else {
+            loadingText.textContent = 'Loading';
+        }
+        // Animasyonlu noktaları ekle
+        const dots = document.createElement('span');
+        dots.className = 'loading-dots';
+        dots.textContent = '...';
+        loadingText.appendChild(dots);
+    }
+    
+    // Yükleme durumunu takip etmek için
+    let resourcesLoaded = false;
+    let animationStarted = false;
+    let fontsLoaded = false;
+    let timeoutElapsed = false;
+    
+    // Loading ekranını gizlemek için fonksiyon
+    function hideLoading() {
+        const loadingOverlay = document.getElementById('loading-overlay');
+        if (loadingOverlay) {
+            loadingOverlay.style.opacity = '0';
+            setTimeout(() => {
+                loadingOverlay.style.visibility = 'hidden';
+            }, 500);
+        }
+    }
+
+    // Sayfanın hazır olup olmadığını kontrol et
+    function checkPageReady() {
+        // Tüm kritik bileşenler yüklendiyse loading ekranını gizle
+        if ((resourcesLoaded && animationStarted && fontsLoaded) || timeoutElapsed) {
+            console.log("Sayfa yüklendi: ", {
+                resourcesLoaded,
+                animationStarted,
+                fontsLoaded,
+                timeoutElapsed
+            });
+            hideLoading();
+        }
+    }
+
+    // Tüm içerik yüklendiğinde
+    window.addEventListener('load', function() {
+        resourcesLoaded = true;
+        checkPageReady();
+    });
+    
+    // Maksimum bekleme süresi (5 saniye)
+    setTimeout(function() {
+        timeoutElapsed = true;
+        checkPageReady();
+    }, 5000);
+    
+    // Font yükleme kontrolü
+    document.fonts.ready.then(function() {
+        fontsLoaded = true;
+        checkPageReady();
+    });
+    
     // Canvas elementini al
     const canvas = document.getElementById('background-canvas');
     const ctx = canvas.getContext('2d');
@@ -68,6 +133,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Animasyon fonksiyonu
     function animate() {
+        // İlk animasyon frame'inde animasyonun başladığını işaretle
+        if (!animationStarted) {
+            animationStarted = true;
+            checkPageReady();
+        }
+
         // Canvas'ı temizle
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         
