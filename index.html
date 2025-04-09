@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoş Geldiniz - Wilwaerin</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <canvas id="background-canvas"></canvas>
+    
+    <header>
+        <div class="logo">
+            <span>Wilwaerin</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#projeler" data-en="Projects" data-tr="Projeler">Projeler</a></li>
+                <li><a href="#hakkimda" data-en="About Me" data-tr="Hakkımda">Hakkımda</a></li>
+                <li><a href="#iletisim" data-en="Contact" data-tr="İletişim">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="ana-sayfa" class="hero">
+            <div class="hero-content">
+                <h1 class="glitch-text" data-text="Merhaba, ben Berkay" data-en="Hello, I'm Berkay" data-tr="Merhaba, ben Berkay">Merhaba, ben <span class="highlight">Berkay</span></h1>
+                <p class="subtitle" data-en="A Passionate Game Developer" data-tr="Tutkulu Bir Oyun Geliştirici">Tutkulu Bir Oyun Geliştirici</p>
+                <a href="#projeler" class="cta-button" data-en="Explore My Projects" data-tr="Projelerimi Keşfet">Projelerimi Keşfet</a>
+            </div>
+        </section>
+
+        <section id="projeler" class="projects">
+            <h2 data-en="My Projects" data-tr="Projelerim">Projelerim</h2>
+            <div class="project-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/ancient-mysteries.png" alt="Ancient Mysteries">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-en="Ancient Mysteries" data-tr="Ancient Mysteries">Ancient Mysteries</h3>
+                        <p data-en="First-person mobile escape puzzle game, developed in 8 weeks as part of SoftiTo 'Game Developer' course. Successfully launched on Google Play Store." data-tr="SoftiTo 'Game Developer' kursu kapsamında 8 haftada geliştirilen birinci şahıs mobil bulmaca oyunu. Google Play Store'da başarıyla yayınlandı.
+                        ">SoftiTo 'Game Developer' kursu kapsamında 8 haftada geliştirilen birinci şahıs mobil bulmaca oyunu. Google Play Store'da başarıyla yayınlandı ve ilk ayda 100+ indirme sayısına ulaştı.</p>
+                        <div class="technologies">
+                            <span>Unity</span>
+                            <span>C#</span>
+                            <span>Google Play Store</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.irisgames.ancientmysteries&hl=en_US" class="demo-button" data-en="Play Store" data-tr="Play Store" target="_blank">Play Store</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/lets-draw.png" alt="Let's Draw">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-en="Let's Draw" data-tr="Let's Draw">Let's Draw</h3>
+                        <p data-en="Mobile game for children to explore creativity through drawing. Developed interactive UI and gesture-based drawing system." data-tr="Çocukların çizim yoluyla yaratıcılıklarını keşfetmeleri için tasarlanmış mobil oyun. Etkileşimli kullanıcı arayüzü ve hareket tabanlı çizim sistemi geliştirildi.">Çocukların çizim yoluyla yaratıcılıklarını keşfetmeleri için tasarlanmış mobil oyun. Etkileşimli kullanıcı arayüzü ve hareket tabanlı çizim sistemi geliştirildi. Itch.io'da indirilebilir.</p>
+                        <div class="technologies">
+                            <span>Unity</span>
+                            <span>C#</span>
+                            <span>Mobile UI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://wilwaerin.itch.io/lets-draw" class="demo-button" data-en="itch.io" data-tr="itch.io" target="_blank">itch.io</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/knock-barrel.png" alt="KnockBarrel">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-en="KnockBarrel" data-tr="KnockBarrel">KnockBarrel</h3>
+                        <p data-en="Developed a realistic FPS shooter for PC using UE5 and C++. Hosted on itch.io for public playtesting and feedback. Implemented real life physics system." data-tr="UE5 ve C++ kullanılarak geliştirilmiş gerçekçi bir PC FPS oyunu. Herkese açık test için itch.io'da yayınlandı. Gerçekçi fizik sistemi uygulandı.">UE5 ve C++ kullanılarak geliştirilmiş gerçekçi bir PC FPS oyunu. Herkese açık test için itch.io'da yayınlandı. Gerçekçi fizik sistemi uygulandı.</p>
+                        <div class="technologies">
+                            <span>Unreal Engine 5</span>
+                            <span>C++</span>
+                            <span>Physics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://wilwaerin.itch.io/knockbarrel" class="demo-button" data-en="itch.io" data-tr="itch.io" target="_blank">itch.io</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/lost-in-chase.png" alt="Lost in Chase">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-en="Lost in Chase" data-tr="Lost in Chase">Lost in Chase</h3>
+                        <p data-en="Developed in 24 hours at AntsJam event. A PC platformer game with designed game mechanics and implemented physics-based character movement." data-tr="AntsJam etkinliğinde 24 saatte geliştirildi. Platform oyun mekanikleri ve fizik tabanlı karakter hareketi içeren bir PC oyunu.">AntsJam etkinliğinde 24 saatte geliştirildi. Platform oyun mekanikleri ve fizik tabanlı karakter hareketi içeren bir PC oyunu.</p>
+                        <div class="technologies">
+                            <span>Unreal Engine 5</span>
+                            <span>Blueprint</span>
+                            <span>Platform Game</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://northern-lights-studios.itch.io/lost-in-chase" class="demo-button" data-en="itch.io" data-tr="itch.io" target="_blank">itch.io</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hakkimda" class="about">
+            <h2 data-en="About Me" data-tr="Hakkımda">Hakkımda</h2>
+            <div class="about-container">
+                <div class="about-avatar">
+                    <div class="pixel-avatar"></div>
+                </div>
+                <div class="about-content">
+                    <p data-en="Hey there! I'm Berkay, a game developer who's been on this exciting journey for 2 years now. I love developing games and I've found my true passion in building immersive games. I've focused on crafting mobile games with different genres that people enjoy and impressed. While I'm proud of my coding skills and problem-solving abilities, what really drives me is the dream of one day running my own game studio where we can create experiences that touch people's hearts. Every day I learn something new in this amazing field and it makes me happy!" data-tr="Merhaba! Ben Berkay, 2 yıldır bu heyecan verici yolculuğa çıkan bir oyun geliştiricisiyim. Oyun geliştirmeyi seviyorum ve gerçek tutkumu sürükleyici oyunlar inşa etmekte buldum. İnsanların keyif aldığı ve etkilendiği farklı türlerde mobil oyunlar tasarlamaya odaklandım. Kodlama becerilerim ve problem çözme yeteneklerimle gurur duysam da, beni gerçekten motive eden şey bir gün insanların kalplerine dokunan deneyimler yaratabileceğimiz kendi oyun stüdyomu işletme hayali. Bu harika alanda her gün yeni bir şeyler öğreniyorum ve bu beni mutlu ediyor!">Merhaba! Ben Berkay, 2 yıldır bu heyecan verici yolculuğa çıkan bir oyun geliştiricisiyim. Oyun geliştirmeyi seviyorum ve gerçek tutkumu sürükleyici oyunlar inşa etmekte buldum. İnsanların keyif aldığı ve etkilendiği farklı türlerde mobil oyunlar tasarlamaya odaklandım. Kodlama becerilerim ve problem çözme yeteneklerimle gurur duysam da, beni gerçekten motive eden şey bir gün insanların kalplerine dokunan deneyimler yaratabileceğimiz kendi oyun stüdyomu işletme hayali. Bu harika alanda her gün yeni bir şeyler öğreniyorum ve bu beni mutlu ediyor!</p>
+                    <p data-en="My technologies and skills:" data-tr="Kullandığım teknolojiler ve becerilerim:">Kullandığım teknolojiler ve becerilerim:</p>
+                    <div class="skills-grid">
+                        <div class="skill-hex">
+                            <div class="hex-content">
+                                <i class="fas fa-gamepad"></i>
+                                <span class="skill-title" data-en="Unity" data-tr="Unity">Unity</span>
+                            </div>
+                        </div>
+                        <div class="skill-hex">
+                            <div class="hex-content">
+                                <i class="fas fa-gamepad"></i>
+                                <span class="skill-title" data-en="Unreal Engine" data-tr="Unreal Engine">Unreal Engine</span>
+                            </div>
+                        </div>
+                        <div class="skill-hex">
+                            <div class="hex-content">
+                                <i class="fas fa-code"></i>
+                                <span class="skill-title" data-en="C#" data-tr="C#">C#</span>
+                            </div>
+                        </div>
+                        <div class="skill-hex">
+                            <div class="hex-content">
+                                <i class="fas fa-code"></i>
+                                <span class="skill-title" data-en="C++" data-tr="C++">C++</span>
+                            </div>
+                        </div>
+                        <div class="skill-hex">
+                            <div class="hex-content">
+                                <i class="fas fa-code"></i>
+                                <span class="skill-title" data-en="Blueprint" data-tr="Blueprint">Blueprint</span>
+                            </div>
+                        </div>
+                        <div class="skill-hex">
+                            <div class="hex-content">
+                                <i class="fas fa-paint-brush"></i>
+                                <span class="skill-title" data-en="UI/UX Design" data-tr="UI/UX Tasarım">UI/UX Tasarım</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p data-en="As a developer open to continuous learning, I'm working to create creative and innovative games." data-tr="Sürekli öğrenmeye açık bir geliştirici olarak, yaratıcı ve yenilikçi oyunlar tasarlamak için çalışıyorum.">Sürekli öğrenmeye açık bir geliştirici olarak, yaratıcı ve yenilikçi oyunlar tasarlamak için çalışıyorum.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="iletisim" class="contact">
+            <h2 data-en="Contact" data-tr="İletişim">İletişim</h2>
+            <div class="contact-section">
+                <div class="social-container centered">
+                    <h3 data-en="Connect With Me" data-tr="Benimle İletişime Geçin">Benimle İletişime Geçin</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/wilwaerin" class="social-icon" title="GitHub" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/berkaymustafaoglu/" class="social-icon" title="LinkedIn" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://wilwaerin.itch.io/" class="social-icon" title="Itch.io" target="_blank">
+                            <i class="fab fa-itch-io"></i>
+                        </a>
+                        <a href="mailto:berkaymustafaoglu@hotmail.com" class="social-icon" title="E-posta">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> <span>berkaymustafaoglu@hotmail.com</span></p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span data-en="Istanbul, Turkey" data-tr="İstanbul, Türkiye">İstanbul, Türkiye</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 <span data-en="Berkay Mustafaoğlu - Game Developer Portfolio" data-tr="Berkay Mustafaoğlu - Oyun Geliştirici Portfolyosu">Berkay Mustafaoğlu - Oyun Geliştirici Portfolyosu</span> | <span data-en="All rights reserved" data-tr="Tüm hakları saklıdır">Tüm hakları saklıdır</span></p>
+        <div class="language-switcher">
+            <button id="lang-tr" class="lang-btn active" data-lang="tr">
+                <span class="flag-icon">🇹🇷</span> TR
+            </button>
+            <button id="lang-en" class="lang-btn" data-lang="en">
+                <span class="flag-icon">🇬🇧</span> EN
+            </button>
+        </div>
+    </footer>
+
+    <div id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
