@@ -1,4 +1,4 @@
-/* Genel Stiller */
+
 :root {
     --primary-color: #8a2be2;
     --secondary-color: #00daff;
@@ -34,7 +34,7 @@ a, button {
     cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAFEmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIwLTA1LTEwVDEyOjMwOjMwKzAzOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMC0wNS0xMFQxMjo0MDo0MyswMzowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMC0wNS0xMFQxMjo0MDo0MyswMzowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowNzVjYjZmMy1jNGIxLTg4NGMtYjU1NC0yZWM4NTY1ZjVkMDciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDc1Y2I2ZjMtYzRiMS04ODRjLWI1NTQtMmVjODU2NWY1ZDA3IiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6MDc1Y2I2ZjMtYzRiMS04ODRjLWI1NTQtMmVjODU2NWY1ZDA3Ij4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDowNzVjYjZmMy1jNGIxLTg4NGMtYjU1NC0yZWM4NTY1ZjVkMDciIHN0RXZ0OndoZW49IjIwMjAtMDUtMTBUMTI6MzA6MzArMDM6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5NTCJpAAABBUlEQVRYw+2YsQ6CMBRFT4uDbLr5NU6u/omTi4vfoF/CYIJxBA0OYPR9wNGmVAVKHYwk7/EFbmhP3gvECnABTsAzkuMAXIG9D+wV6CJ73YQHBrAYCK8kgVslPC93z6nyxrqhLYCL9blwKA6QS8n+oAJsOeH9hPRUgH0WvUjgrgT8cTQDdksgpVzO0kK+xhgIRUDnfcCXWWJEArT+5r0AWPG7XQQpAFZ8BXz0Ajzj/4ILAMD98-cFAMB/f0HDNY4kAMtq7GVKPA971d4BgC/wZ5ADpgZqYWXgFxzK9LZFHcWZ9aVvlVlfiRxF2ZYvQyNbTn9ShaR8KmYS8BIR3iShIXnwCwzp4nKSl1HbAAAAAElFTkSuQmCC'), pointer;
 }
 
-/* Canvas Arka Plan */
+
 #background-canvas {
     position: fixed;
     top: 0;
@@ -44,7 +44,7 @@ a, button {
     z-index: -1;
 }
 
-/* Header ve Navigasyon */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -127,7 +127,7 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-/* Ana Sayfa / Hero Bölümü */
+
 .hero {
     height: 100vh;
     display: flex;
@@ -178,7 +178,7 @@ nav ul li a:hover::after {
     }
 }
 
-/* Glitch aktif sınıfı için daha fazla efekt */
+
 .glitch-active {
     animation: intense-glitch 0.2s infinite;
     position: relative;
@@ -473,7 +473,7 @@ section h2::after {
     opacity: 0.9;
 }
 
-/* Hakkımda Bölümü */
+
 .about-container {
     display: flex;
     gap: 3rem;
@@ -540,7 +540,7 @@ section h2::after {
     color: var(--secondary-color);
 }
 
-/* Beceri Çubukları Stilleri */
+
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
@@ -637,7 +637,7 @@ section h2::after {
     }
 }
 
-/* Zaman Çizelgesi */
+
 .timeline {
     position: relative;
     max-width: 800px;
@@ -716,7 +716,7 @@ section h2::after {
     font-size: 1rem;
 }
 
-/* İletişim Bölümü */
+
 .contact-section {
     display: flex;
     justify-content: center;
@@ -849,7 +849,7 @@ section h2::after {
     color: var(--secondary-color);
 }
 
-/* Footer */
+
 footer {
     padding: 2rem 5%;
     text-align: center;
@@ -866,7 +866,7 @@ footer p {
     color: rgba(244, 244, 255, 0.7);
 }
 
-/* Dil Değiştirme Butonu */
+
 .language-switcher {
     display: flex;
     gap: 0.5rem;
@@ -909,7 +909,7 @@ footer p {
     border-radius: 3px;
 }
 
-/* Medya Sorguları / Mobil Uyumluluk */
+
 @media screen and (max-width: 992px) {
     html {
         font-size: 14px;
@@ -1012,10 +1012,10 @@ footer p {
     }
 }
 
-/* Google Fontları */
+
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Press+Start+2P&display=swap');
 
-/* Özelleştirilmiş Scroll Bar */
+
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -1037,13 +1037,13 @@ footer p {
     box-shadow: 0 0 15px rgba(0, 218, 255, 0.5);
 }
 
-/* Firefox için scrollbar özelleştirmesi */
+
 * {
     scrollbar-width: thin;
     scrollbar-color: var(--primary-color) rgba(15, 11, 30, 0.9);
 }
 
-/* Yukarı Çıkma Butonu */
+
 .back-to-top {
     position: fixed;
     bottom: 30px;
@@ -1080,7 +1080,7 @@ footer p {
     font-size: 1.2rem;
 }
 
-/* Loading Overlay */
+
 #loading-overlay {
     position: fixed;
     top: 0;
