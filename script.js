@@ -1,21 +1,5 @@
 // Canvas arka plan animasyonu
 document.addEventListener('DOMContentLoaded', function() {
-    // Tarayıcı dilini algıla ve Loading/Yükleniyor olarak ayarla
-    const browserLang = navigator.language || navigator.userLanguage;
-    const loadingText = document.querySelector('.loading-text');
-    if (loadingText) {
-        if (browserLang.substring(0, 2) === 'tr') {
-            loadingText.textContent = 'Yükleniyor';
-        } else {
-            loadingText.textContent = 'Loading';
-        }
-        // Animasyonlu noktaları ekle
-        const dots = document.createElement('span');
-        dots.className = 'loading-dots';
-        dots.textContent = '...';
-        loadingText.appendChild(dots);
-    }
-    
     // Yükleme durumunu takip etmek için
     let resourcesLoaded = false;
     let animationStarted = false;

@@ -71,16 +71,22 @@ header {
     gap: 10px;
 }
 
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.logo-link:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 15px rgba(0, 218, 255, 0.8);
+}
+
 .logo span {
     font-family: var(--font-secondary);
     font-size: 1.2rem;
     color: var(--secondary-color);
     transition: all 0.3s ease;
-}
-
-.logo span:hover {
-    text-shadow: 0 0 8px rgba(0, 218, 255, 0.8);
-    transform: scale(1.05);
 }
 
 nav ul {
